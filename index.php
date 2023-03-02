@@ -1,46 +1,11 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8" />
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <title>День1</title>
-    <meta name="description" content="Day1">
-
-</head>
+<?php require "components/head.php";?>
 
 <body>
     <div class="container">
-        <header class="borda">
-            <h1>Веб-разработка</h1>
-
-            
-
-            <?php
-                
-                $test = $_POST['test'];
-                print"HI ".$test;
-                $mysqli = new mysqli("localhost", "root", "", "users");
-                $sql = "INSERT INTO" 'users'('login', 'password') VALUES
-                $result = $mysqli->query($sql);
-
-            ?> 
-
-
-        </header>
-        <nav>
-            
-
-
-            <ul>
-                <li>
-                    <a href="reg.html"> Регистрация </a>
-                </li>
-                <li>
-                    <a href="Index.html"> Главная </a>
-                </li>
-            </ul>    
-        </nav>
+        <?php require "components/head.php";?>
+        <?php require "components/nav.php";?>
 
         <?php
 
@@ -55,10 +20,7 @@
         </form>
          
         
-
-        <footer class="borda">
-            <h1> Footer</h1> 
-        </footer>
+        <?php require "components/footer.php";?>
         
     </div>
     
